@@ -1,13 +1,13 @@
 # cv-en
 
 <!-- badges: start -->
-[![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 <!-- badges: end -->
 
 ## Overview
 
-This repository contains the source files for generating my **full** curriculum vitae (CV) (en-US). It serves as a detailed record of my professional experience and achievements, and is not intended for direct submission to potential employers.
+This repository contains the source files for generating my **full** curriculum vitae (CV) (en). It serves as a detailed record of my professional experience and achievements, and **is not intended for direct submission to potential employers**.
 
 The CV is generated in R using the [`rmarkdown`](https://github.com/rstudio/rmarkdown), [`pagedown`](https://github.com/rstudio/pagedown), and [`datadrivencv`](https://github.com/nstrayer/datadrivencv) packages.
 
