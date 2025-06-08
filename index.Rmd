@@ -78,7 +78,7 @@ cv <- data_location  |> create_cv_object()
 if (isTRUE(params$pdf_mode)) {
   cat(
     "<p style='font-size: 0.7rem; text-align: center;'>",
-    "View this CV online at: ",
+    "Access this CV online at: ",
     "[danielvartan.github.io/cv-en]",
     "(https://danielvartan.github.io/cv-en)",
     "</p>",
@@ -135,17 +135,17 @@ University of São Paulo
 <p>
 Senior Lecturer in Complexity Science in Public Health<br>
 Centre for Public Health<br>
-Queen’s University Belfast
+Queen's University Belfast
 </p>
 :::
 
 ## Disclaimer {#disclaimer}
 
-Developed with R [pagedown](https://github.com/rstudio/pagedown) and [datadrivencv](https://github.com/nstrayer/datadrivencv) packages.
+Developed with R [pagedown](https://github.com/rstudio/pagedown) and [datadrivencv](https://github.com/nstrayer/datadrivencv) packages
 
 Source code available at [github.com/danielvartan/cv-en](https://github.com/danielvartan/cv-en)
 
-Last updated on `r withr::with_locale(c("LC_TIME" = "en_US"), format(Sys.Date(), "%B %e, %Y"))`.
+Last updated on `r withr::with_locale(c("LC_TIME" = "en_US"), format(Sys.Date(), "%B %e, %Y"))`
 
 # Main
 
@@ -155,7 +155,9 @@ Last updated on `r withr::with_locale(c("LC_TIME" = "en_US"), format(Sys.Date(),
 
 <p style="font-size: 0.7rem;">Extensive experience in managing research projects, grant and proposal writing (Brazilian national agencies, institutional calls), training and mentoring early-career researchers, and delivering scientific communication to both technical and non-technical audiences. Demonstrated ability to work independently and in multicultural, cross-disciplinary teams, including collaborations with international open science initiatives and public sector partners. Committed to reproducible research practices, scientific integrity, and impactful research to address complex societal challenges. Fluent in English and Portuguese, and prepared to relocate and adapt to international academic environments.<p>
 
-<!-- <p style="font-size: 0.7rem;">Computational social scientist specialized in agent-based modeling, data science, and open-source scientific software. Significant expertise in R, Python, and NetLogo, with demonstrable skills in building interactive models, dashboards, and research tools for exploring social, environmental, and health-related phenomena. Experienced collaborating in and leading interdisciplinary research teams, publishing in peer-reviewed journals, securing research funding, and presenting results internationally. Committed to open science, stakeholder engagement, and clear communication. Fluent in English and Portuguese.<p> -->
+<p style="font-size: 0.7rem; font-style: italic; color: #4F5556;">Additional supporting documents, detailed outputs, and original references available upon request or via links below.<p>
+
+<p style="font-size: 0.7rem; font-style: italic; color: #4F5556;">Legal name: Daniel Kachvartanian de Azevedo<br>Professional and social name: Daniel Vartanian<p>
 
 ## Education {#education data-icon=graduation-cap}
 
@@ -172,7 +174,7 @@ cv <- cv |> print_section("research_experience")
 ::: {.aside style="top: 0px;"}
 <h2>Languages</h2>
 
-<i class="fa-solid fa-crow"></i> [danielvartan](https://www.duolingo.com/profile/danielvartan)
+<p style="margin-top: 5px"><i class="fa-solid fa-crow"></i> [danielvartan](https://www.duolingo.com/profile/danielvartan)</p>
 
 <h3 style="padding-top: 10px">English</h3>
 
@@ -224,7 +226,7 @@ cv <- cv |> print_section("teaching_experience")
 ::: {.aside style="top: 0px;"}
 <h2>Programming Languages</h2>
 
-<i class="fa-brands fa-github"></i> [danielvartan](https://github.com/danielvartan)
+<p style="margin-top: 5px"><i class="fa-brands fa-github"></i> [danielvartan](https://github.com/danielvartan)</p>
 
 <h3 style="padding-top: 10px">Expert</h3>
 
@@ -247,6 +249,8 @@ cv <- cv |> print_section("teaching_experience")
 <h3 style="padding-top: 10px">Beginner</h3>
 
 <i class="fa-solid fa-code"></i> `C` `C++` `C#`
+
+<i class="fa-solid fa-code"></i> `Scala`
 
 <i class="fa-solid fa-code"></i> `GAML` (GAMA)
 
@@ -292,22 +296,6 @@ cv <- cv |> print_section("additional_training")
 ::: {.aside style="top: 0px;"}
 <h2>Technical Skills</h2>
 
-<!-- <p style="margin-block-start: 0em;">• Programming: R, NetLogo, Python, SQL, JavaScript (D3.js, Plotly, Flask/Django – more to learn), Bash, HTML/CSS, Git
-
-<p style="margin-block-start: 0em;">• Visualization: R Shiny, custom dashboards, NetLogo visual outputs, spatial and network data visualization</p>
-
-<p style="margin-block-start: 0em;">• Modeling & Analysis: Agent-based modeling, complex networks, machine learning, temporal and spatial analytics, survey and quantitative research methods</p>
-
-<p style="margin-block-start: 0em;">• Project Management & Grants: Successful Brazilian and multi-team projects, proposal development, budgeting and team coordination</p>
-
-<p style="margin-block-start: 0em;">• Stakeholder Collaboration: Workshops/training for practitioners, public health engagement, interdisciplinary and international teamwork</p>
-
-<h2>International and Relocation Readiness</h2>
-
-<p style="margin-block-start: 0em;">• Collaborated on projects with teams in Brazil, the US, UK, and across Latin America; experienced in remote, multicultural scientific environments.</p>
-
-<p style="margin-block-start: 0em;">• Fully prepared to relocate to Norway and learn Norwegian.</p> -->
-
 <p style="margin-block-start: 0em;">Statistical modeling</p>
 
 <p style="margin-block-start: 0em;">Complex systems modeling</p>
@@ -342,7 +330,7 @@ cv <- cv |> print_section("additional_training")
 
 <p style="margin-block-start: 0em;">Technical and academic writing</p>
 
-<p style="margin-block-start: 0em;">Grant proposal writing</p>
+<p style="margin-block-start: 0em;">Proposal/grant writing</p>
 
 <p style="margin-block-start: 0em;">Community building and management</p>
 
@@ -351,10 +339,44 @@ cv <- cv |> print_section("additional_training")
 <p style="margin-block-start: 0em;">Web design</p>
 :::
 
-## Grants, Awards & Fellowships {#funding data-icon=award}
+## Honors, Awards & Fellowships {#funding data-icon=medal}
 
 ```{r}
 cv <- cv |> print_section("funding")
+```
+
+## Outreach Projects {#outreach data-icon=users}
+
+```{r}
+cv <- cv |> print_section("outreach")
+```
+
+## Selected Talks {#talks data-icon=comments}
+
+```{r}
+cv <- cv |> print_section("talks")
+```
+
+::: {.aside style="top: 0px;"}
+<h2>R Packages</h2>
+
+<a href="https://danielvartan.github.io/actverse/"><img src="images/actverse-logo.png" alt="{actverse} hex logo" style="width: 80%; padding-left: 50px;"></a>
+
+<a href="https://danielvartan.github.io/brandr/"><img src="images/brandr-logo.png" alt="{brandr} hex logo" style="width: 80%; padding-left: 50px;"></a>
+
+<a href="https://danielvartan.github.io/groomr/"><img src="images/groomr-logo.png" alt="{groomr} hex logo" style="width: 80%; padding-left: 50px;"></a>
+
+<a href="https://danielvartan.github.io/orbis/"><img src="images/orbis-logo.png" alt="{orbis} hex logo" style="width: 80%; padding-left: 50px;"></a>
+
+<a href="https://danielvartan.github.io/quartor/"><img src="images/quartor-logo.png" alt="{quartor} hex logo" style="width: 80%; padding-left: 50px;"></a>
+
+<a href="https://docs.ropensci.org/mctq/"><img src="images/mctq-logo.png" alt="{mctq} hex logo" style="width: 80%; padding-left: 50px;"></a>
+:::
+
+## Software Projects {#software data-icon=box-open}
+
+```{r}
+cv <- cv |> print_section("software_development")
 ```
 
 ::: {.aside style="top: 0px;"}
@@ -382,40 +404,6 @@ cv <- cv |> print_section("funding")
 
 <h3 style="padding-bottom: 1rem;">[Illustration of Fisher's Hypothesis in Brazil's Economy](https://danielvartan.github.io/fisher-hypothesis/)</h3>
 :::
-
-## Extension Projects {#extension data-icon=users}
-
-```{r}
-cv <- cv |> print_section("extension_projects")
-```
-
-## Talks {#talks data-icon=comments}
-
-```{r}
-cv <- cv |> print_section("talks")
-```
-
-::: {.aside style="top: 0px;"}
-<h2>R Packages</h2>
-
-<a href="https://danielvartan.github.io/actverse/"><img src="images/actverse-logo.png" alt="{actverse} hex logo" style="width: 80%; padding-left: 50px;"></a>
-
-<a href="https://danielvartan.github.io/brandr/"><img src="images/brandr-logo.png" alt="{brandr} hex logo" style="width: 80%; padding-left: 50px;"></a>
-
-<a href="https://danielvartan.github.io/groomr/"><img src="images/groomr-logo.png" alt="{groomr} hex logo" style="width: 80%; padding-left: 50px;"></a>
-
-<a href="https://danielvartan.github.io/orbis/"><img src="images/orbis-logo.png" alt="{orbis} hex logo" style="width: 80%; padding-left: 50px;"></a>
-
-<a href="https://danielvartan.github.io/quartor/"><img src="images/quartor-logo.png" alt="{quartor} hex logo" style="width: 80%; padding-left: 50px;"></a>
-
-<a href="https://docs.ropensci.org/mctq/"><img src="images/mctq-logo.png" alt="{mctq} hex logo" style="width: 80%; padding-left: 50px;"></a>
-:::
-
-## Software Projects {#software data-icon=box-open}
-
-```{r}
-cv <- cv |> print_section("software_development")
-```
 
 ## Academic Publications & Posters {#publications data-icon=book}
 
